@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="321.0" prefWidth="507.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo23.Client">
+    <children>
+        <Label layoutX="40.0" layoutY="70.0" text="Подать заявку:">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Label>
+        <CheckBox fx:id="InstallingIntercom" layoutX="327.0" layoutY="113.0" mnemonicParsing="false" selected="true" text="Установка домофона" />
+        <CheckBox fx:id="IntercomRepair" layoutX="327.0" layoutY="152.0" mnemonicParsing="false" text="Ремонт домофона" />
+        <CheckBox fx:id="Other" layoutX="330.0" layoutY="230.0" mnemonicParsing="false" text="и другое" />
+        <CheckBox fx:id="ReplacingIntercom" layoutX="329.0" layoutY="193.0" mnemonicParsing="false" text="Замена домофона" />
+        <Button fx:id="Exit" layoutX="15.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#MouseCliked" text="Выход" />
+        <TextField fx:id="ClientName" layoutX="40.0" layoutY="109.0" prefHeight="25.0" prefWidth="199.0" promptText="Имя:" />
+        <TextField fx:id="CustomerNumber" layoutX="40.0" layoutY="176.0" prefHeight="25.0" prefWidth="199.0" promptText="Номер телефона:" />
+        <TextField fx:id="ClientAddress" layoutX="40.0" layoutY="247.0" prefHeight="25.0" prefWidth="199.0" promptText="Адрес:" />
+        <Button fx:id="SendRequest" layoutX="317.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="122.0" text="Отправить заявку" />
+        <Label layoutX="317.0" layoutY="73.0" text="Выбрать услугу:">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <Label alignment="CENTER" graphicTextGap="3.0" layoutX="108.0" layoutY="14.0" prefHeight="17.0" prefWidth="263.0" text="АЭРКОМ" textAlignment="CENTER">
+            <font>
+                <Font name="Serif Regular" size="33.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>
